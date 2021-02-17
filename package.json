@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "purgecss": "^4.0.0"
+  },
+  "scripts": {
+    "build": "npx purgecss --css bootstrap.min.css --content **/*.html --output dist"
   }
 }
