@@ -3,6 +3,10 @@
     "purgecss": "^4.0.0"
   },
   "scripts": {
-    "build": "npx purgecss --css bootstrap.min.css --content **/*.html --output dist"
+    "build": "npx purgecss --css bootstrap.min.css --content **/*.html --output dist",
+    "watch": "nodemon -e scss -x \"npm run build\""
+  },
+  "dependencies": {
+    "nodemon": "^2.0.7"
   }
 }
